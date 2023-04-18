@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetupForRecordMeal">
+
+    <TextView
+        android:id="@+id/tvPromptSetup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Looks like this is your first time using this app... \n\nYou will be asked to setup a few things before proceed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <LinearLayout
+        android:id="@+id/llUserInputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPromptSetup"
+        app:layout_constraintVertical_bias="0.169">
+
+        <TextView
+            android:id="@+id/tvPromptCaloriesAmount"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="1. Enter your desired daily calories intake limit: "
+            />
+
+        <EditText
+            android:id="@+id/etInputCaloriesAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:hint="Calories amount (kCal)"/>
+
+        <TextView
+            android:id="@+id/tvPromptCarbsAmount"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="2. Enter your desired daily carbs intake limit: "
+            />
+
+        <EditText
+            android:id="@+id/etInputCarbsAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:hint="Carbs amount (g)"/>
+
+        <TextView
+            android:id="@+id/tvPromptProteinAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Enter your desired daily protein intake amount: "/>
+
+        <EditText
+            android:id="@+id/etInputProteinAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:hint="Protein amount (g)"/>
+
+        <TextView
+            android:id="@+id/tvPromptFatAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Enter your desired daily fat intake amount: "/>
+
+        <EditText
+            android:id="@+id/etInputFatAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:hint="Fat amount (g)"/>
+
+        <TextView
+            android:id="@+id/tvPromptVitaminCAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Enter your desired daily Vitamin C intake amount: "/>
+
+        <EditText
+            android:id="@+id/etInputVitaminCAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vitamin C amount (mg)"
+            android:minHeight="50dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnProceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llUserInputs" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
