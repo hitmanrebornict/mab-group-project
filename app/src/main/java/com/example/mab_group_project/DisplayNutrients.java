@@ -1,8 +1,11 @@
 package com.example.mab_group_project;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -83,5 +86,14 @@ public class DisplayNutrients extends AppCompatActivity {
 
         TextView tvMeals = findViewById(R.id.todayMeals);
         tvMeals.setText(mealandtype);
+
+        Button btnRecordMeal = findViewById(R.id.btnRecordMeal);
+        btnRecordMeal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DisplayNutrients.this, RecordMeals.class);
+                DisplayNutrients.this.startActivity(intent);
+            }
+        });
     }
 }

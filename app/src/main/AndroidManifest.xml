@@ -19,7 +19,7 @@
             android:name=".NutritionActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".DisplayNutrients"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +27,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ShowNutrientsForRecord"
+            android:exported="false" />
+        <activity
+            android:name=".RecordMeals"
+            android:exported="false" />
+        <activity
+            android:name=".SetupForRecordMeal"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
