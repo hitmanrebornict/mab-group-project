@@ -7,40 +7,48 @@
     android:orientation="vertical"
   >
 
-    <EditText
-        android:id="@+id/search_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter food name"
-        android:imeOptions="actionSearch" />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
 
     <Button
-        android:id="@+id/search_button"
-        android:layout_width="match_parent"
+        android:id="@+id/button_display_nutrients"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Search" />
+        android:text="Display Nutrients"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp" />
 
-    <Spinner
-        android:id="@+id/calorie_filter_spinner"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button_search_food"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/search_button" />
+        android:text="Search Food"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
 
-    <ListView
-        android:id="@+id/food_list_view"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button_placeholder_1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/search_button"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="0.5dp" />
+        android:text="Placeholder Button 1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/favorite_image_view"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_centerVertical="true"-->
-<!--        android:src="@drawable/starborder"-->
-<!--        android:padding="10dp"/>-->
+    <Button
+        android:id="@+id/button_placeholder_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placeholder Button 2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp" />
+
+</LinearLayout>
 
 </LinearLayout>
