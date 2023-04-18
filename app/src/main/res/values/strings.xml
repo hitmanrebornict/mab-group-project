@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">mab-group-project</string>
+    <string-array name="calorie_filter_levels">
+        <item>All Calories</item>
+        <item>Less than 500 Kcal</item>
+        <item>500 - 1000 Kcal</item>
+        <item>1000 - 1500 Kcal</item>
+        <item>Greater than 1500 Kcal</item>
+    </string-array>
 </resources>

@@ -20,13 +20,11 @@
         android:layout_height="wrap_content"
         android:text="Search" />
 
-    <TextView
-        android:id="@+id/result_text_view"
+    <Spinner
+        android:id="@+id/calorie_filter_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:padding="16dp" />
+        android:layout_below="@+id/search_button" />
 
     <ListView
         android:id="@+id/food_list_view"
@@ -35,5 +33,14 @@
         android:layout_below="@+id/search_button"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="0.5dp" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/favorite_image_view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:src="@drawable/starborder"-->
+<!--        android:padding="10dp"/>-->
 
 </LinearLayout>
