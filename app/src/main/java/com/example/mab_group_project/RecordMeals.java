@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.mab_group_project;
 
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothClass;

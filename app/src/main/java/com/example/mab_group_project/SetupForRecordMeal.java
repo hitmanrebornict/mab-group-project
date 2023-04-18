@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.mab_group_project;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -63,7 +63,7 @@ public class SetupForRecordMeal extends AppCompatActivity {
         editor.putInt("Carbs", carbs);
         editor.apply();
 
-        Log.i("SharedPreferences created: ", "sharedpreferences sp created");
+        Log.i("SP created: ", "sharedpreferences sp created");
     }
 
     //validate user text so that nutrients do not <= 0

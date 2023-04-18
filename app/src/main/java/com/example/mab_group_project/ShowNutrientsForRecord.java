@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.mab_group_project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -82,17 +82,13 @@ public class ShowNutrientsForRecord extends AppCompatActivity {
     }
 
     public void saveMeal() {
-        float calories = nutrientAmounts.get("Energy");
-        float carbs = nutrientAmounts.get("Carbohydrate, by difference");
-        float protein = nutrientAmounts.get("Protein");
-        float vitaminc = nutrientAmounts.get("Vitamin C, total ascorbic acid");
-        float fat = nutrientAmounts.get("Total lipid (fat)");
+        float calories = 0, carbs = 0, protein = 0, vitaminc = 0, fat = 0;
 
-        if (!nutrientAmounts.containsKey("Energy")) calories = 0;
-        if (!nutrientAmounts.containsKey("Carbohydrate, by difference")) carbs = 0;
-        if (!nutrientAmounts.containsKey("Protein")) protein = 0;
-        if (!nutrientAmounts.containsKey("Vitamin C, total ascorbic acid")) vitaminc = 0;
-        if (!nutrientAmounts.containsKey("Total lipid (fat)")) fat = 0;
+        if (nutrientAmounts.containsKey("Energy")) calories = nutrientAmounts.get("Energy");
+        if (nutrientAmounts.containsKey("Carbohydrate, by difference")) carbs = nutrientAmounts.get("Carbohydrate, by difference");
+        if (nutrientAmounts.containsKey("Protein"))    protein = nutrientAmounts.get("Protein");
+        if (nutrientAmounts.containsKey("Vitamin C, total ascorbic acid")) vitaminc = nutrientAmounts.get("Vitamin C, total ascorbic acid");
+        if (nutrientAmounts.containsKey("Total lipid (fat)")) fat = nutrientAmounts.get("Total lipid (fat)");
 
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");

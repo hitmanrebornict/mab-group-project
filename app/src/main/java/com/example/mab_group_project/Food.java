@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.mab_group_project;
 
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.reflect.TypeToken;
