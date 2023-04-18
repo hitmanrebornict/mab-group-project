@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">mab-group-project</string>
+    <string name="app_name">MealFix</string>
     <string-array name="calorie_filter_levels">
         <item>All Calories</item>
         <item>Less than 500 Kcal</item>

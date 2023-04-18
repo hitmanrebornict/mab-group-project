@@ -60,7 +60,7 @@ public class PremiumRecipe extends AppCompatActivity {
         //suggestions of different diet - columns, each column have 3 menus
         //when users click on the menu, the recipe and the nutrients value will appear
 
-        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(400, 500);
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT);
         layoutParams.setMargins(16, 16, 16, 16);
 
         ImageView diet1 = new ImageView(this);

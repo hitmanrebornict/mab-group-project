@@ -16,58 +16,76 @@
         android:theme="@style/Theme.Mabgroupproject"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Mabgroupproject.NoActionBar"/>
+        <activity
             android:name=".PremiumRecipe"
             android:exported="false" />
         <activity
             android:name=".ResultActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Mabgroupproject.NoActionBar"/>
         <activity
             android:name=".bmiActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Mabgroupproject.NoActionBar"/>
         <activity
             android:name=".SearchFoodModule"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Mabgroupproject.NoActionBar"/>
         <activity
             android:name=".NutritionActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Mabgroupproject.NoActionBar"/>
+
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Mabgroupproject.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".ShowNutrientsForRecord"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Mabgroupproject.NoActionBar"/>
         <activity
             android:name=".RecordMeals"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Mabgroupproject.NoActionBar"/>
         <activity
             android:name=".SetupForRecordMeal"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Mabgroupproject.NoActionBar"/>
         <activity
             android:name=".DisplayNutrients"
-            android:exported="false" />
-
-        <activity android:name=".Lowcarb"
+            android:exported="false"
+            android:theme="@style/Theme.Mabgroupproject.NoActionBar"/>
+        <activity
+            android:name=".Lowcarb"
             android:exported="false"
             android:parentActivityName=".PremiumRecipe" />
-        <activity android:name=".atkins"
+        <activity
+            android:name=".atkins"
             android:exported="false"
             android:parentActivityName=".PremiumRecipe" />
-        <activity android:name=".dukan"
+        <activity
+            android:name=".dukan"
             android:exported="false"
             android:parentActivityName=".PremiumRecipe" />
-        <activity android:name=".vegan"
+        <activity
+            android:name=".vegan"
             android:exported="false"
             android:parentActivityName=".PremiumRecipe" />
-        <activity android:name=".paleo"
+        <activity
+            android:name=".paleo"
             android:exported="false"
             android:parentActivityName=".PremiumRecipe" />
-
     </application>
 
 </manifest>
