@@ -53,7 +53,7 @@ public class atkins extends AppCompatActivity {
 
         // Add the image to the LinearLayout
         ImageView imageView = new ImageView(this);
-        imageView.setImageResource(R.drawable.int4);
+        imageView.setImageResource(R.drawable.int5);
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         layout1.addView(imageView);
 
