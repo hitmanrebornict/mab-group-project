@@ -41,6 +41,7 @@ public class SetupForRecordMeal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 storeNutrients();
+                finish();
             }
         });
     }

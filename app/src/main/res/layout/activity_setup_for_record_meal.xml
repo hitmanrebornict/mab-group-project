@@ -10,7 +10,7 @@
         android:id="@+id/tvPromptSetup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Looks like this is your first time using this app... \n\nYou will be asked to setup a few things before proceed"
+        android:text="Setting up your daily calorie amount"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
