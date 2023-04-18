@@ -5,9 +5,13 @@
       <map>
         <entry key="..\:/Android/mab-group-project/app/src/main/res/layout/activity_main.xml" value="0.7340129749768304" />
         <entry key="..\:/Android/mab-group-project/app/src/main/res/layout/activity_nutrition.xml" value="0.1890625" />
+        <entry key="..\:/Android/mabteach/app/src/main/res/layout/activity_atkins.xml" value="0.3605072463768116" />
         <entry key="..\:/Android/mabteach/app/src/main/res/layout/activity_bmi.xml" value="0.3605072463768116" />
+        <entry key="..\:/Android/mabteach/app/src/main/res/layout/activity_display_nutrients.xml" value="0.1" />
         <entry key="..\:/Android/mabteach/app/src/main/res/layout/activity_main.xml" value="0.18541666666666667" />
+        <entry key="..\:/Android/mabteach/app/src/main/res/layout/activity_premium_recipe.xml" value="0.1" />
         <entry key="..\:/Android/mabteach/app/src/main/res/layout/activity_result.xml" value="0.3605072463768116" />
+        <entry key="..\:/Android/mabteach/app/src/main/res/layout/nutri_list.xml" value="0.15092592592592594" />
         <entry key="..\:/Android/mabtesting/app/src/main/res/layout/activity_main.xml" value="0.18541666666666667" />
         <entry key="..\:/Android/mabtesting/app/src/main/res/layout/activity_search_food_module.xml" value="0.18541666666666667" />
       </map>
