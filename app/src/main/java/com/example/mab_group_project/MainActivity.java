@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import java.io.IOException;
 import java.util.List;
@@ -15,11 +16,11 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button displayNutrientsButton;
-    private Button searchFoodButton;
-    private Button bmiButton;
-    private Button recipeButton;
-    private Button setupDailyIntake;
+    private ImageView displayNutrientsButton;
+    private ImageView searchFoodButton;
+    private ImageView bmiButton;
+    private ImageView recipeButton;
+    private ImageView setupDailyIntake;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +28,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        displayNutrientsButton = findViewById(R.id.button_display_nutrients);
-        searchFoodButton = findViewById(R.id.button_search_food);
-        setupDailyIntake = findViewById(R.id.button_setup_daily_nutrients);
-        bmiButton = findViewById(R.id.button_bmi);
-        recipeButton = findViewById(R.id.button_recipe);
+        displayNutrientsButton = findViewById(R.id.image_1);
+        searchFoodButton = findViewById(R.id.image_2);
+        setupDailyIntake = findViewById(R.id.image_3);
+        bmiButton = findViewById(R.id.image_4);
+        recipeButton = findViewById(R.id.image_5);
 
         displayNutrientsButton.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, DisplayNutrients.class);
@@ -61,4 +62,4 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
     }
-}
+    }
