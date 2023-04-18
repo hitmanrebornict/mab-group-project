@@ -76,7 +76,7 @@ public class ShowNutrientsForRecord extends AppCompatActivity {
                 }
 
                 saveMeal();
-                Intent intent1 = new Intent(ShowNutrientsForRecord.this, DisplayNutrients.class);
+                Intent intent1 = new Intent(ShowNutrientsForRecord.this, MainActivity.class);
                 ShowNutrientsForRecord.this.startActivity(intent1);            }
         });
     }
