@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button displayNutrientsButton;
     private Button searchFoodButton;
+    private Button bmiButton;
 
     private Button setupDailyIntake;
 
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         displayNutrientsButton = findViewById(R.id.button_display_nutrients);
         searchFoodButton = findViewById(R.id.button_search_food);
         setupDailyIntake = findViewById(R.id.button_setup_daily_nutrients);
+        bmiButton = findViewById(R.id.button_bmi);
 
         displayNutrientsButton.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, DisplayNutrients.class);
@@ -46,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, SetupForRecordMeal.class);
                 startActivity(intent);
             }
+        });
+
+        bmiButton.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, bmiActivity.class);
+            startActivity(intent);
         });
     }
 }

@@ -16,6 +16,12 @@
         android:theme="@style/Theme.Mabgroupproject"
         tools:targetApi="31">
         <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bmiActivity"
+            android:exported="false" />
+        <activity
             android:name=".SearchFoodModule"
             android:exported="false" />
         <activity

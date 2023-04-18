@@ -32,10 +32,10 @@
         android:layout_marginBottom="16dp" />
 
     <Button
-        android:id="@+id/button_placeholder_1"
+        android:id="@+id/button_bmi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Placeholder Button 1"
+        android:text="BMI and Calories Calculator"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp" />

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00008B"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:text="BMI Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00FFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        android:layout_marginTop="16dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bmiResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#00FFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/bmiCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#00FFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <!--    <my.edu.utar.g3.HalfCircleView-->
+    <!--        android:id="@+id/halfCircleView"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_centerHorizontal="true"/>-->
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00FFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Healthy BMI range: 18.5 - 25.0 kg/m²" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Healthy weight for the height: "
+            android:textColor="#00FFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/LowerEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00FFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00FFFF"
+            android:text=" - "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/UpperEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00FFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight to Normal Category : "
+            android:textColor="#00FFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/weightToNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00FFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:text="Daily Calorie Requirements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00FFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maintain Weight : "
+            android:textColor="#00FFFF"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/maintainCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#00FFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gain Weight : "
+            android:textColor="#00FFFF"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="60dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/gainCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00FFFF"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lose Weight : "
+            android:textColor="#00FFFF"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="55dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/loseCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00FFFF"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="250dp"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Back"
+        android:textColor="#00FFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:fontFamily="casual" />
+
+
+</LinearLayout>
