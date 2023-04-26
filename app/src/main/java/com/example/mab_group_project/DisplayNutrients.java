@@ -66,20 +66,22 @@ public class DisplayNutrients extends AppCompatActivity {
         Log.i("total nutrient", caloriesL + " " + carbsL + " " + proteinL + " " + vitamincL + " " + fatL);
 
         TextView tvTitle = findViewById(R.id.listTodayMeals);
-        tvTitle.setText("Today is " + curDate + "\nBelow are the nutrients you have consumed for today and your meal taken today: ");
+        tvTitle.setText("Today is " + curDate + "\n\nMeal & Nutrients taken today: ");
 
         TextView tvCalories = findViewById(R.id.caloriesAmount);
-        tvCalories.setText("Today's Calories Amount: " + decfor.format(calories) + "/" + caloriesL + "kCal");
+        tvCalories.setText("\nCalories:  " + decfor.format(calories) + "/" + caloriesL + "kCal");
         TextView tvCarbs = findViewById(R.id.carbsAmount);
-        tvCarbs.setText("Today's Carbs Amount: " + decfor.format(carbs) + "/" + carbsL + "g");
+        tvCarbs.setText("\nCarbohydrates: " + decfor.format(carbs) + "/" + carbsL + "g");
         TextView tvProtein = findViewById(R.id.proteinAmount);
-        tvProtein.setText("Today's Protein Amount: " + decfor.format(protein) + "/" + proteinL + "g");
+        tvProtein.setText("\nProtein: " + decfor.format(protein) + "/" + proteinL + "g");
         TextView tvVitaminC = findViewById(R.id.vitamincAmount);
-        tvVitaminC.setText("Today's Vitamin C Amount: " + decfor.format(vitaminc) + "/" + vitamincL + "mg");
+        tvVitaminC.setText("\nVitamin C: " + decfor.format(vitaminc) + "/" + vitamincL + "mg");
         TextView tvFat = findViewById(R.id.fatAmount);
-        tvFat.setText("Today's Calories Amount: " + decfor.format(fat) + "/" + fatL + "g");
+        tvFat.setText("\nFat: " + decfor.format(fat) + "/" + fatL + "g");
 
-        String mealandtype = "Meals taken for today: \n\n";
+        String mealandtype = "\n\nMeals taken for today: \n\n";
+
+        if (todayMeal.size() == 0) mealandtype += "No meals have been taken for today.";
         for (int i = 0; i < todayMeal.size(); i++) {
             mealandtype += "Meal: " + todayMeal.get(i).getMeal() + "\nMeal Type: " + todayMeal.get(i).getMealType() + "\n\n";
         }
