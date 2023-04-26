@@ -67,7 +67,6 @@ public class PremiumRecipe extends AppCompatActivity {
         diet1.setLayoutParams(layoutParams);
         diet1.setScaleType(ImageView.ScaleType.CENTER_CROP);
         diet1.setPadding(16, 16, 16, 16);
-        diet1.setImageResource(R.drawable.r1);
 
         Bitmap mbitmap1=((BitmapDrawable) getResources().getDrawable(R.drawable.r1)).getBitmap();
         Bitmap imageRounded1=Bitmap.createBitmap(mbitmap1.getWidth(), mbitmap1.getHeight(), mbitmap1.getConfig());
@@ -76,7 +75,13 @@ public class PremiumRecipe extends AppCompatActivity {
         mpaint1.setAntiAlias(true);
         mpaint1.setShader(new BitmapShader(mbitmap1, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP));
         canvas1.drawRoundRect((new RectF(0, 0, mbitmap1.getWidth(), mbitmap1.getHeight())), 30, 30, mpaint1);
-        diet1.setImageBitmap(imageRounded1);
+        
+        Drawable roundedDrawable1 = new BitmapDrawable(getResources(), imageRounded1);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            diet1.setBackground(roundedDrawable1);
+        } else {
+            diet1.setBackgroundDrawable(roundedDrawable1);
+        }
 
         TextView name1 = new TextView(this);
         name1.setText("Paleo Diet");
@@ -89,7 +94,6 @@ public class PremiumRecipe extends AppCompatActivity {
         diet2.setLayoutParams(layoutParams);
         diet2.setScaleType(ImageView.ScaleType.CENTER_CROP);
         diet2.setPadding(16, 16, 16, 16);
-        diet2.setImageResource(R.drawable.r2);
 
         Bitmap mbitmap2=((BitmapDrawable) getResources().getDrawable(R.drawable.r2)).getBitmap();
         Bitmap imageRounded2=Bitmap.createBitmap(mbitmap2.getWidth(), mbitmap2.getHeight(), mbitmap2.getConfig());
@@ -97,9 +101,15 @@ public class PremiumRecipe extends AppCompatActivity {
         Paint mpaint2=new Paint();
         mpaint2.setAntiAlias(true);
         mpaint2.setShader(new BitmapShader(mbitmap2, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP));
-        canvas2.drawRoundRect((new RectF(0, 0, mbitmap2.getWidth(), mbitmap2.getHeight())), 90, 90, mpaint2);
-        diet2.setImageBitmap(imageRounded2);
-
+        canvas2.drawRoundRect((new RectF(0, 0, mbitmap2.getWidth(), mbitmap2.getHeight())), 30, 30, mpaint2);
+        
+        Drawable roundedDrawable2 = new BitmapDrawable(getResources(), imageRounded2);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            diet2.setBackground(roundedDrawable2);
+        } else {
+            diet2.setBackgroundDrawable(roundedDrawable2);
+        }
+        
         TextView name2 = new TextView(this);
         name2.setText("Vegan");
         name2.setTextSize(20);
@@ -110,8 +120,7 @@ public class PremiumRecipe extends AppCompatActivity {
         ImageView diet3 = new ImageView(this);
         diet3.setLayoutParams(layoutParams);
         diet3.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        diet3.setPadding(16, 16, 16, 16);
-        diet3.setImageResource(R.drawable.r3);
+        diet3.setPadding(16, 16, 16, 16);;
 
         Bitmap mbitmap3=((BitmapDrawable) getResources().getDrawable(R.drawable.r3)).getBitmap();
         Bitmap imageRounded3=Bitmap.createBitmap(mbitmap3.getWidth(), mbitmap3.getHeight(), mbitmap3.getConfig());
@@ -119,8 +128,14 @@ public class PremiumRecipe extends AppCompatActivity {
         Paint mpaint3=new Paint();
         mpaint3.setAntiAlias(true);
         mpaint3.setShader(new BitmapShader(mbitmap3, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP));
-        canvas3.drawRoundRect((new RectF(0, 0, mbitmap3.getWidth(), mbitmap3.getHeight())), 50, 50, mpaint3);
-        diet3.setImageBitmap(imageRounded3);
+        canvas3.drawRoundRect((new RectF(0, 0, mbitmap3.getWidth(), mbitmap3.getHeight())), 30, 30, mpaint3);
+        
+        Drawable roundedDrawable3 = new BitmapDrawable(getResources(), imageRounded3);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            diet3.setBackground(roundedDrawable3);
+        } else {
+            diet3.setBackgroundDrawable(roundedDrawable3);
+        }
 
         TextView name3 = new TextView(this);
         name3.setText("Low Carbs");
@@ -134,7 +149,6 @@ public class PremiumRecipe extends AppCompatActivity {
         diet4.setLayoutParams(layoutParams);
         diet4.setScaleType(ImageView.ScaleType.CENTER_CROP);
         diet4.setPadding(16, 16, 16, 16);
-        diet4.setImageResource(R.drawable.r4);
 
         Bitmap mbitmap4=((BitmapDrawable) getResources().getDrawable(R.drawable.r4)).getBitmap();
         Bitmap imageRounded4=Bitmap.createBitmap(mbitmap4.getWidth(), mbitmap4.getHeight(), mbitmap4.getConfig());
@@ -142,8 +156,14 @@ public class PremiumRecipe extends AppCompatActivity {
         Paint mpaint4=new Paint();
         mpaint4.setAntiAlias(true);
         mpaint4.setShader(new BitmapShader(mbitmap4, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP));
-        canvas4.drawRoundRect((new RectF(0, 0, mbitmap4.getWidth(), mbitmap4.getHeight())), 70, 70, mpaint4);
-        diet4.setImageBitmap(imageRounded4);
+        canvas4.drawRoundRect((new RectF(0, 0, mbitmap4.getWidth(), mbitmap4.getHeight())), 30, 30, mpaint4);
+        
+        Drawable roundedDrawable4 = new BitmapDrawable(getResources(), imageRounded4);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            diet4.setBackground(roundedDrawable4);
+        } else {
+            diet4.setBackgroundDrawable(roundedDrawable4);
+        }
 
         TextView name4 = new TextView(this);
         name4.setText("Dukan");
@@ -157,7 +177,6 @@ public class PremiumRecipe extends AppCompatActivity {
         diet5.setLayoutParams(layoutParams);
         diet5.setScaleType(ImageView.ScaleType.CENTER_CROP);
         diet5.setPadding(16, 16, 16, 16);
-        diet5.setImageResource(R.drawable.r5);
 
         Bitmap mbitmap5=((BitmapDrawable) getResources().getDrawable(R.drawable.r5)).getBitmap();
         Bitmap imageRounded5=Bitmap.createBitmap(mbitmap5.getWidth(), mbitmap5.getHeight(), mbitmap5.getConfig());
@@ -165,8 +184,14 @@ public class PremiumRecipe extends AppCompatActivity {
         Paint mpaint5=new Paint();
         mpaint5.setAntiAlias(true);
         mpaint5.setShader(new BitmapShader(mbitmap5, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP));
-        canvas5.drawRoundRect((new RectF(0, 0, mbitmap5.getWidth(), mbitmap5.getHeight())), 70, 70, mpaint5);
-        diet5.setImageBitmap(imageRounded5);
+        canvas5.drawRoundRect((new RectF(0, 0, mbitmap5.getWidth(), mbitmap5.getHeight())), 30, 30, mpaint5);
+        
+        Drawable roundedDrawable5 = new BitmapDrawable(getResources(), imageRounded5);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            diet5.setBackground(roundedDrawable5);
+        } else {
+            diet5.setBackgroundDrawable(roundedDrawable5);
+        }
 
         TextView name5 = new TextView(this);
         name5.setText("Atkins");
