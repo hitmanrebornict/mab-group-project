@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/nutri_tv"
         android:text="Nutrients"
-        android:background="@color/blue_500"
+        android:background="@color/black"
         android:textSize="18sp"
         android:textColor="#FFFFFF"/>
 
