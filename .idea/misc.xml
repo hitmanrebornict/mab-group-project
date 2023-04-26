@@ -11,8 +11,11 @@
         <entry key="..\:/Android/mabteach/app/src/main/res/layout/activity_display_nutrients.xml" value="0.1" />
         <entry key="..\:/Android/mabteach/app/src/main/res/layout/activity_lowcarb.xml" value="0.18541666666666667" />
         <entry key="..\:/Android/mabteach/app/src/main/res/layout/activity_main.xml" value="0.18541666666666667" />
+        <entry key="..\:/Android/mabteach/app/src/main/res/layout/activity_nutrition.xml" value="0.18697916666666667" />
         <entry key="..\:/Android/mabteach/app/src/main/res/layout/activity_premium_recipe.xml" value="0.1" />
         <entry key="..\:/Android/mabteach/app/src/main/res/layout/activity_result.xml" value="0.3605072463768116" />
+        <entry key="..\:/Android/mabteach/app/src/main/res/layout/activity_search_food_module.xml" value="0.1828125" />
+        <entry key="..\:/Android/mabteach/app/src/main/res/layout/activity_setup_for_record_meal.xml" value="0.18697916666666667" />
         <entry key="..\:/Android/mabteach/app/src/main/res/layout/activity_splash.xml" value="0.3605072463768116" />
         <entry key="..\:/Android/mabteach/app/src/main/res/layout/bg_splash.xml" value="0.3605072463768116" />
         <entry key="..\:/Android/mabteach/app/src/main/res/layout/nutri_list.xml" value="0.15092592592592594" />
@@ -23,7 +26,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

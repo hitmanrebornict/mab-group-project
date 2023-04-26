@@ -5,34 +5,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    >
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="Nutrition Value Checking"
+        android:textColor="@color/title_text_color"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/search_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter food name"
-        android:imeOptions="actionSearch" />
+        android:imeOptions="actionSearch"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/search_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Search" />
+        android:layout_marginTop="8dp"
+        android:text="Search"
+        android:background="@color/button_background_color"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
     <Spinner
         android:id="@+id/calorie_filter_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/search_button" />
+        android:layout_marginTop="8dp"
+        android:background="@@color/white"
+        android:padding="8dp"
+        android:popupBackground="@color/white" />
 
     <ListView
         android:id="@+id/food_list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/search_button"
+        android:layout_marginTop="8dp"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="0.5dp" />
-
 
 </LinearLayout>

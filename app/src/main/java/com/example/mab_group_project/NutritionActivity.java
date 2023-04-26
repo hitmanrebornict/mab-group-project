@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -67,6 +68,8 @@ public class NutritionActivity extends AppCompatActivity {
                 }
                 in.close();
 
+                Log.d("API_RESPONSE", response.toString());
+
                 JSONObject jsonObject = new JSONObject(response.toString());
                 JSONArray foodsArray = jsonObject.getJSONArray("foods");
 
@@ -95,9 +98,8 @@ public class NutritionActivity extends AppCompatActivity {
                 Collections.sort(nutritionInfoList);
 
                 // Get the image URL from the food object
-                String imageUrl = "";
                 if (foodObject.has("imageUrl")) {
-                    imageUrl = foodObject.getString("imageUrl");
+                    imageURL = foodObject.getString("imageUrl"); // Update this line
                 }
 
                 return nutritionInfoList;
@@ -114,6 +116,9 @@ public class NutritionActivity extends AppCompatActivity {
 
             if (imageURL != null) {
                 Picasso.get().load(imageURL).into(foodImageView);
+            } else {
+                // Load a default image as a fallback
+                Picasso.get().load(R.drawable.int3).into(foodImageView);
             }
         }
     }
