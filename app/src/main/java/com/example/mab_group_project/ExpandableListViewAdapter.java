@@ -69,6 +69,8 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
 
         TextView nutritv = convertview.findViewById(R.id.nutri_tv);
         nutritv.setText(nutrilisttitle);
+        
+        convertview.setBackgroundColor(Color.BLACK);
 
         return convertview;
     }
